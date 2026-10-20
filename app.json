@@ -1,23 +1,56 @@
+
 {
   "name": "yt-api-bot",
   "stack": "container",
   "formation": {
-    "web": { "quantity": 1, "size": "basic" },
-    "worker": { "quantity": 1, "size": "basic" }
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
   },
   "env": {
-    "API_ID": { "description": "my.telegram.org se" },
-    "API_HASH": { "description": "my.telegram.org se" },
-    "BOT_TOKEN": { "description": "@BotFather se" },
-    "ADMIN_IDS": { "description": "Sirf apni Telegram ID" },
-    "TG_GROUP": { "value": "your_group_username" },
-    "TG_CHANNEL": { "value": "your_channel_username" },
-    "REDIS_HOST": { "description": "Upstash/Redis Cloud host" },
-    "REDIS_PORT": { "description": "Redis port" },
-    "REDIS_USERNAME": { "value": "default" },
-    "REDIS_PASSWORD": { "description": "Redis password" },
-    "API_HOST": { "value": "whisperselling.xyz" },
-    "BASE_URL": { "value": "https://whisperselling.xyz" },
-    "COOKIES_BROWSER": { "value": "" }
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org"
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org"
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram bot token from @BotFather"
+    },
+    "ADMIN_IDS": {
+      "description": "Your Telegram numeric user ID only"
+    },
+    "TG_GROUP": {
+      "value": "your_group_username"
+    },
+    "TG_CHANNEL": {
+      "value": "your_channel_username"
+    },
+    "REDIS_HOST": {
+      "description": "Upstash or Redis Cloud host"
+    },
+    "REDIS_PORT": {
+      "description": "Redis port"
+    },
+    "REDIS_USERNAME": {
+      "value": "default"
+    },
+    "REDIS_PASSWORD": {
+      "description": "Redis password"
+    },
+    "API_HOST": {
+      "value": "api.whisperselling.xyz"
+    },
+    "BASE_URL": {
+      "value": "https://api.whisperselling.xyz"
+    },
+    "COOKIES_BROWSER": {
+      "value": ""
+    }
   }
 }
