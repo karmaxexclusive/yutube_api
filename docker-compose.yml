@@ -1,5 +1,7 @@
 services:
   ytube-api:
+    env_file:
+      - .env
     build:
       context: .
       dockerfile: Dockerfile
@@ -52,6 +54,8 @@ services:
       retries: 3
 
   ytube-bot:
+    env_file:
+      - .env
     build:
       context: .
       dockerfile: Dockerfile
