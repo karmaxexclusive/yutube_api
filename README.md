@@ -80,6 +80,9 @@ API_HOST=api.nubcoders.com
 BASE_URL=https://api.nubcoders.com
 ```
 
+Compose loads this file into both containers at runtime. It is excluded from the
+Docker build context so credentials are not embedded in the image.
+
 ### 3. Run the Services
 Start the application stack:
 
